@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -8,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +43,7 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-700 hover:text-brand-blue transition-colors">About</a>
+            <Link to="/about" className="text-gray-700 hover:text-brand-blue transition-colors">About</Link>
             <a href="#how-it-works" className="text-gray-700 hover:text-brand-blue transition-colors">How It Works</a>
             <a href="#verify" className="text-gray-700 hover:text-brand-blue transition-colors">Verify</a>
             
@@ -95,7 +95,7 @@ export const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t py-4 px-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <a href="#about" className="text-gray-700 hover:text-brand-blue transition-colors py-2">About</a>
+              <Link to="/about" className="text-gray-700 hover:text-brand-blue transition-colors py-2">About</Link>
               <a href="#how-it-works" className="text-gray-700 hover:text-brand-blue transition-colors py-2">How It Works</a>
               <a href="#verify" className="text-gray-700 hover:text-brand-blue transition-colors py-2">Verify</a>
               
