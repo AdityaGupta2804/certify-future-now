@@ -25,6 +25,16 @@ const Index = () => {
             </p>
           </div>
           <SignUpForm />
+          {/* Add Student Login Link */}
+          <div className="mt-6 flex flex-col items-center">
+            <div className="text-gray-400 my-1">or</div>
+            <a
+              href="/login"
+              className="inline-block rounded-xl bg-white shadow px-4 py-2 font-semibold text-primary hover:bg-primary/10 hover-scale transition text-base"
+            >
+              Student Login
+            </a>
+          </div>
         </div>
       </div>
       <div className="hidden md:flex w-1/2 bg-transparent items-center justify-center">
